@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: none;
+
+}
+
+header {
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+  
+    width:80px
+    
+}
+
+
+body{
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.505)) ,url(/images/close-up-happy-colleagues-table.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.burguer  {
+    width: 25px;
+    fill: #3fafa6e5;
+    display: none;
+}
+
+.dropdown {
+
+margin-right: -50px;
+
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenu{
+   
+    height: 90vh;
+    padding: 15%;
+    color: white;
+
+}
+
+.contenu h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.contenu p {
+ width: 40%;
+ margin: 20px 0;
+}
+
+.boutons {
+
+    margin-top: 120px;
+}
+
+.boutons button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.bouton1{
+    background-color: orange;
+    color: white;
+}
+
+.bouton2{
+    background-color:white;
+    color: #3fafa6e5;
+}
+.dropdown-menu{
+    background-color: #3fafa6e5;
+    color: white;
+}
+.vert{
+    background-color: #3fafa6e5;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+
+
+@media (max-width:1350px) {
+    
+.logo{
+    width: 60px;
+}
+    nav .dropdown a {
+    
+        font-size: 12px;
+    }
+
+    nav .dropdown{
+        display: flex;
+        align-items: center;
+    }
+    nav a{
+        font-size: 12px;
+    }
+    .contenu p {
+        width: 70%;
+        margin: 20px 0;
+       }
+
+    }
+    .vert{
+       
+        padding: 10px 5px;
+         font-size: 12px;
+    }
+         
+
+
+@media (max-width:400px) {
+    
+    .contenu h1 {
+        font-size: 30px;
+    }
+
+    .contenu p {
+        width: 90%;
+        margin: 20px 0;
+       }
+
+    .boutons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+       }
+
+       .burguer {
+        display: flex;
+       }
+}
+
+@media (max-width:950px ) {
+    
+    .contenu h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        display: none
+    }
+
+nav.active {
+    background-color:    rgb(208, 255, 0) ;
+    position: absolute;
+    display: flex;
+    top: 8%;
+    right: 4%;
+    flex-direction: column;
+    width: 70% ;
+    padding: 3%
+}
+    .contenu p {
+        width: 90%;
+        margin: 20px 0;
+       }
+
+    .boutons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+       }
+
+       .burguer {
+        display: flex;
+        position: absolute;
+        top:3% ;
+       right: 5%;
+       }
+}
+
